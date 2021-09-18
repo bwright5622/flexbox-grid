@@ -97,7 +97,8 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background: black;
+  background-size: cover;
   height: 100%;
 }
 
@@ -108,26 +109,72 @@ body {
   height: 100%;
 }
 
+.header{
+    font-weight: 900; 
+    color: #fff;
+    font-variant: small-caps; 
+    border-bottom:4px solid #fff;
+    width: 100%;
+}
+
+.title p{
+    font-weight: 300;
+    font-variant: small-caps;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    margin-bottom: 0;
+
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
+  flex-flow: row wrap;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
+
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  color:#fff;
   line-height: 1.5em;
   font-size: 1.6em;
-  background-color: #f16059;
   height: 300px;
   width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: auto;
+
+  
 }
 
+.div-1 h1, .div-2 h1, .div-3 h1{
+    font-size: 1em;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    
+}
+
+.div-1 p, .div-2 p, .div-3 p{
+    font-size: .5em;
+    display: flex;
+    line-height: 25px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+    padding-right: 10%;
+}
+
+.div-1, .div-2 {
+    border-right: 2px solid #fff;
+    margin-right: 30px;
+    padding: 10px;
+}
 
 
 
